@@ -2,7 +2,7 @@
 
 //declaration variable = data ;
 // In JavaScript, we can declare the variable by using three different keywords.
-//1.var (We should avoid in the modern JavaScript programs ) (Can be used to store the data which is changing dynamically )
+//1.var (We should avoid in the modern JavaScript programs ) (Can be used to store the data which is changing dynamically )-
 //2.let (Can be used to store the data which is changing dynamically )
 //3.const (Can be used to store constant data )
 
@@ -50,3 +50,5 @@ console.log(a);
 // console.log(x);
 // console.log(y);
 console.log(z);
+
+const pi = 3.14 ;

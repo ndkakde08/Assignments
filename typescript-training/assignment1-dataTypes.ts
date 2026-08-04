@@ -1,3 +1,5 @@
+//=========Assignment 1 - Data Types ==========================
+
 //1. Temperature of city in degree celsius :25.5
 let temperature:number = 25.5;
 console.log(`1. Temperature of city in degree celsius :${temperature}`);

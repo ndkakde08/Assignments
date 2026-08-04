@@ -19,18 +19,18 @@
     If the DTI ratio is less than 40%, the loan is approved.
     If the DTI ratio is 40% or greater, the loan is denied. */
 
-    let customerName:string;
-    let creditScore:number;
-    let income:number;
-    let employmentStatus:boolean;
-    let debtToIncomeRatio:number;
+    function empInfo(
+        customerName:string,
+        creditScore:number,
+        income:number,
+        employmentStatus:boolean,
+        debtToIncomeRatio:number):void{
 
-    customerName = "John Doe";
-    creditScore = 720;
-    income = 55000;
-    employmentStatus = true;
-    debtToIncomeRatio = 35.0;
-
+    // let customerName:string;
+    // let creditScore:number;
+    // let income:number;
+    // let employmentStatus:boolean;
+    // let debtToIncomeRatio:number;
     
     if (creditScore >= 750)
         {
@@ -65,3 +65,6 @@
     {
         console.log("Loan is denied as customer Credit score below 650.")
     }
+    }
+        
+    empInfo("John Doe",720,55000,true, 35.0)
