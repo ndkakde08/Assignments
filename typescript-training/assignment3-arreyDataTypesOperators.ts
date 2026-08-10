@@ -19,17 +19,19 @@ let totalMarks:number = 0;
 
 for(let i =0; i < studentNames.length; i++) // to calculate the updated marks 
     {
-       updatedMarks[i] = studentMarks[i] +10 ;
+       updatedMarks[i] = studentMarks[i]! +10 ;
        if (i == 0){ console.log("Updated Marks:")}
-  
+       
+       // to calculate the Total marks
+       totalMarks = totalMarks + updatedMarks[i]!;
        console.log(`${studentNames[i]} : ${updatedMarks[i]}`)
 
     }
 
-for (let i =0; i < updatedMarks.length; i++) // to calculate the Total marks
+/* for (let i =0; i < updatedMarks.length; i++) // to calculate the Total marks
     {
-        totalMarks = totalMarks + updatedMarks[i];
-    }
+        totalMarks = totalMarks + updatedMarks[i]!;
+    } */
     console.log(`Average marks:`, totalMarks/updatedMarks.length)   // calculate and print the average marks
 
 

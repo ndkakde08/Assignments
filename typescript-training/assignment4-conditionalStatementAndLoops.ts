@@ -31,21 +31,21 @@ let debitSuspiciousTransactionCount = 0;
 
 for (let i = 0; i < transactionAmount.length; i++)
     {
-        if (transactionAmount[i] > 0)
+        if (transactionAmount[i]! > 0)
             {
                 creditTransactionCount ++ ;
-                totalAmountCredited =  totalAmountCredited + transactionAmount[i]
-                if (transactionAmount[i] > 10000)
+                totalAmountCredited =  totalAmountCredited + transactionAmount[i]!
+                if (transactionAmount[i]! > 10000)
                     {
                         console.log (`${transactionAmount[i]} is the suspicious credit transactions `)
                         creditSuspiciousTransactionCount ++ ;
                     }
             }
-        else if (transactionAmount[i] < 0)
+        else if (transactionAmount[i]! < 0)
             {
                 debitTransactionCount ++ ;
-                totalAmountdebited = totalAmountdebited - transactionAmount[i]
-                if (transactionAmount[i] < -10000)
+                totalAmountdebited = totalAmountdebited - transactionAmount[i]!
+                if (transactionAmount[i]! < -10000)
                     {
                         console.log (`${transactionAmount[i]} is the suspicious debit transactions `)
                         debitSuspiciousTransactionCount ++ ;
