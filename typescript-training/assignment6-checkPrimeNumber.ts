@@ -17,7 +17,7 @@ function isPrimeNumber(num1: number):boolean
             return true   // 2 is smallest prime number
         }
 
-            for (let i = 2; i< num1; i++)
+            for (let i = 2; i< num1; i++)   //To check the remainder after division upto (num -1)
             {
                 if (num1 % i == 0)
                     {
@@ -30,12 +30,3 @@ function isPrimeNumber(num1: number):boolean
 let checkNumber: number = 13;
 console.log(`is ${checkNumber} prime number ?:  ${isPrimeNumber(checkNumber)}`) 
 
-/* let num1: number= 1099
-
-        for (let i = 2; i<= num1; i++){
-            if (num1 % i == 0)
-                {
-                    console.log("Given number is not prime number",i) //false
-                }
-            }
-            console.log("Given number is prime number") //true */

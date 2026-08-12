@@ -148,7 +148,3 @@ function calculateHike(
     //function return the value
     return hikePercenatge
 }
-
-
-
-
